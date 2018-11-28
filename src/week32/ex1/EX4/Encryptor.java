@@ -11,8 +11,7 @@ public class Encryptor {
 
     public String encrypt(String message) {
         Random random = new Random();
-        String[] letters = message.split("");
-        List<String> letters2 =new ArrayList<>(Arrays.asList(letters));
+
 
 
 
@@ -27,6 +26,10 @@ public class Encryptor {
         message = message.replaceAll("o", "8");
         message = message.replaceAll("U", "9");
         message = message.replaceAll("u", "9");
+
+
+        String[] letters = message.split("");
+        List<String> letters2 =new ArrayList<>(Arrays.asList(letters));
 
 
         String symbols = "!@#$%&*+-";
