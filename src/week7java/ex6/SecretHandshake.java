@@ -13,7 +13,7 @@ public abstract class SecretHandshake {
 
     public Boolean isHandshakeTHere(String price) {
 
-            if (!price.equals(number)) {
+            if (!price.contains(number)) {
                 return false;
 
             }

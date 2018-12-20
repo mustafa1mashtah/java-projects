@@ -2,8 +2,6 @@ package week7java.evaluationWeek7;
 
 import week3java.ex9.FileReader;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Bank {
@@ -40,22 +38,22 @@ public class Bank {
 
 
         Integer highestSalary = 0;
-        String highestSalaryEmployee="";
-        String department="";
+        String highestSalaryEmployee = "";
+        String department = "";
 
         for (Employees employee : employees) {
             Integer salary = Integer.valueOf(employee.getSalary());
             if (highestSalary < salary) {
                 highestSalary = salary;
-                 highestSalaryEmployee =  employee.getName();
-                 department= employee.getDepartment();
+                highestSalaryEmployee = employee.getName();
+                department = employee.getDepartment();
 
 
             }
 
 
         }
-        System.out.println("Highest salary employee: "+highestSalaryEmployee+"from "+department+" with "+highestSalary);
+        System.out.println("Highest salary employee: " + highestSalaryEmployee + " from " + department + " with " + highestSalary);
 
 
     }
